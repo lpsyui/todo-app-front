@@ -5,6 +5,14 @@
 <main>
 	<h1>Hello {name}!</h1>
 	<h2>TODO APP</h2>
+
+	<!-- App.svelte -->
+	<!-- App.svelte -->
+	<script>
+		import TodoList from "./TodoList.svelte";
+	</script>
+
+	<TodoList />
 </main>
 
 <style>
