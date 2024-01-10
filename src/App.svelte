@@ -1,7 +1,11 @@
-<!-- src/App.svelte -->
 <script>
 	import FetchData from "./FetchData.svelte";
+	import TailwindCss from "./TailwindCSS.svelte";
 </script>
+
+<!-- src/App.svelte -->
+
+<TailwindCss />
 
 <main>
 	<h1>Hello Svelte</h1>

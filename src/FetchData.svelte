@@ -31,16 +31,24 @@
     }
 </script>
 
-<main>
-    <h2>{message}</h2>
-    <input bind:value={newTodo} placeholder="New ToDo" />
-    <button on:click={createTodo}>Create ToDo</button>
-    <button on:click={fetchData}>Fetch Data</button>
+<main class="text-center p-8">
+    <h2 class="text-3xl mb-4">{message}</h2>
+    <input
+        bind:value={newTodo}
+        placeholder="New ToDo"
+        class="border p-2 mb-2 w-full"
+    />
+    <button on:click={createTodo} class="bg-blue-500 text-white px-4 py-2 mr-2">
+        Create ToDo
+    </button>
+    <button on:click={fetchData} class="bg-green-500 text-white px-4 py-2">
+        Fetch Data
+    </button>
 
     {#if todos.length > 0}
-        <ul>
+        <ul class="mt-4">
             {#each todos as { id, content }}
-                <li key={id}>{content}</li>
+                <li key={id} class="bg-gray-100 p-2 mb-2 rounded">{content}</li>
             {/each}
         </ul>
     {/if}
